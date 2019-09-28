@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @person.first_name %>
+</p>
+
+<p>
+  <strong>Midle name:</strong>
+  <%= @person.midle_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @person.last_name %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @person.sex %>
+</p>
+
+<p>
+  <strong>Full name:</strong>
+  <%= @person.full_name %>
+</p>
+
+<table>
+  <thead>
+    <th>Именительный</th>
+    <th>Родительный</th>
+    <th>Дательный</th>
+    <th>Творительный</th>
+    <th>Винительный</th>
+    <th>Предложный</th>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>

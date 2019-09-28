@@ -1,0 +1,7 @@
+<%= simple_form_for @person do |f| %>
+  <%= f.input :first_name %>
+  <%= f.input :midle_name %>
+  <%= f.input :last_name %>
+  <%= f.input :sex, as: :select, collection: [[1, 'Male'],[ 0, "Female"]], label_method: :second, value_method: :first%>
+  <%= f.button :submit %>
+<% end %>
