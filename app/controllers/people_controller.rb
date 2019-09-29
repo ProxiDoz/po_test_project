@@ -10,7 +10,8 @@ class PeopleController < ApplicationController
   # GET /people/1
   # GET /people/1.json
   def show
-    @cases = Cases.all_options
+    @cases = Case.all
+    @full_name_cases = @person.declension_names
   end
 
   # GET /people/new

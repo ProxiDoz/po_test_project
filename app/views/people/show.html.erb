@@ -17,7 +17,7 @@
 
 <p>
   <strong>Sex:</strong>
-  <%= @person.sex %>
+  <%= @person.sex ? "Male" : "Female" %>
 </p>
 
 <p>
@@ -27,14 +27,14 @@
 
 <table>
   <thead>
-    <th>Именительный</th>
-    <th>Родительный</th>
-    <th>Дательный</th>
-    <th>Творительный</th>
-    <th>Винительный</th>
-    <th>Предложный</th>
+    <% @cases.each do |c| %>
+      <th><%= c.name %></th>
+    <% end %>
   </thead>
   <tbody>
+    <% @full_name_cases.each do |fnc| %>
+      <td><%= fnc.full_name %></td>
+    <% end %>
   </tbody>
 </table>
 

@@ -5,5 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-Cases.create([{ name: "Именительный" }, { name: "Родительный" }, { name: "Дательный" }, { name: "Творительный" },{ name: "Винительный" },{ name: "Предложный" }])
+Case.create([{ name: 'Именительный', method: 'nominative' }, { name: 'Родительный', method: 'genitive' }, { name: 'Дательный', method: 'dative' }, { name: 'Творительный', method: 'instrumental' },{ name: 'Винительный', method: 'accusative' },{ name: 'Предложный', method: 'prepositional'}]) if Case.all.empty?
